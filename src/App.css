@@ -1,0 +1,221 @@
+/* App.css */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up a nice, readable font and background color */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #5d3f28; /* Wine-like color for headings */
+}
+
+button {
+  background-color: #5d3f28; /* Wine color for buttons */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3e2a1f; /* Darker shade of the wine color */
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #5d3f28; /* Border turns wine color when focused */
+}
+
+/* Adding smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+ul li {
+  margin: 0 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #5d3f28;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #3e2a1f;
+}
+
+/* Page-specific styles */
+.page-container {
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Georgia', serif;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+button {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  margin-top: 20px;
+}
+
+/* Wine Pairing Page */
+.wine-pairing-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wine-pairing-container input[type="text"] {
+  margin-bottom: 15px;
+}
+
+.wine-pairing-container button {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 12px;
+  background-color: #5d3f28;
+  color: white;
+}
+
+.wine-pairing-container p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+/* Wine History Page */
+.history-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.2rem;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+ul li span {
+  color: #5d3f28;
+  font-weight: bold;
+}
+
+/* About Page */
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h2 {
+  font-size: 2rem;
+  color: #5d3f28;
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .page-container {
+    padding: 20px;
+  }
+
+  .wine-pairing-container {
+    width: 90%;
+  }
+
+  .history-container {
+    width: 90%;
+  }
+}
